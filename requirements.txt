@@ -1,0 +1,16 @@
+altair
+datetime
+dotenv
+email.mime.text
+json
+logging
+numpy 
+openai 
+os
+pandas
+pathlib 
+requests
+smtplib
+streamlit
+typing
+uuid

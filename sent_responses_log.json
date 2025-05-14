@@ -1,0 +1,122 @@
+[
+  {
+    "email_id": "001",
+    "recipient": "angry.customer@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-14T02:46:14.542160Z",
+    "response": "Email sending failed due to an error: Email sending failed for 001\n\n[Sent at 2025-05-14T02:46:14.542160Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "002",
+    "recipient": "curious.shopper@example.com",
+    "classification": "inquiry",
+    "timestamp": "2025-05-14T02:46:19.527346Z",
+    "response": "Email sending failed due to an error: Email sending failed for 002\n\n[Sent at 2025-05-14T02:46:19.527346Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "003",
+    "recipient": "happy.user@example.com",
+    "classification": "feedback",
+    "timestamp": "2025-05-14T02:46:23.356122Z",
+    "response": "Email sending failed due to an error: Email sending failed for 003\n\n[Sent at 2025-05-14T02:46:23.356122Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "004",
+    "recipient": "tech.user@example.com",
+    "classification": "support_request",
+    "timestamp": "2025-05-14T02:46:27.077275Z",
+    "response": "Email sending failed due to an error: Email sending failed for 004\n\n[Sent at 2025-05-14T02:46:27.077275Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "005",
+    "recipient": "business.client@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-14T02:46:30.244984Z",
+    "response": "Email sending failed due to an error: Email sending failed for 005\n\n[Sent at 2025-05-14T02:46:30.244984Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "001",
+    "recipient": "angry.customer@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-14T02:46:56.194837Z",
+    "response": "Dear Customer,\n\nI'm truly sorry to hear about the condition of your order. We take these matters very seriously. I've initiated a refund for your order #12345 and it should reflect in your account within 3-5 business days. We appreciate your patience and understanding in this matter.\n\n[Sent at 2025-05-14T02:46:56.194837Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "002",
+    "recipient": "curious.shopper@example.com",
+    "classification": "inquiry",
+    "timestamp": "2025-05-14T02:46:59.631413Z",
+    "response": "Hello,\n\nThank you for your interest in our premium package. I'm pleased to inform you that it is indeed compatible with Mac OS. Please feel free to reach out if you have any other questions.\n\nBest regards.\n\n[Sent at 2025-05-14T02:46:59.631413Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "003",
+    "recipient": "happy.user@example.com",
+    "classification": "feedback",
+    "timestamp": "2025-05-14T02:47:04.313541Z",
+    "response": "Dear Customer,\n\nThank you for your kind words! We're thrilled to hear that Sarah was able to assist you effectively. Your feedback is greatly appreciated and will be shared with our team to continue providing excellent service.\n\nBest Regards,\n\n[Sent at 2025-05-14T02:47:04.313541Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "004",
+    "recipient": "tech.user@example.com",
+    "classification": "support_request",
+    "timestamp": "2025-05-14T02:47:09.535634Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear you're having trouble with the installation. Our technical team is currently looking into error code 5123 and we'll get back to you with a solution as soon as possible. Thank you for your patience.\n\nBest,\n[Your Name]\n\n[Sent at 2025-05-14T02:47:09.535634Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "005",
+    "recipient": "business.client@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-14T02:47:13.341299Z",
+    "response": "Dear Sender,\n\nThank you for considering us for a potential partnership. We are open to exploring this opportunity further. Please let us know your preferred date and time for the call next week.\n\nBest Regards.\n\n[Sent at 2025-05-14T02:47:13.341299Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "001",
+    "recipient": "angry.customer@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-14T03:26:05.453003Z",
+    "response": "Dear Customer,\n\nI'm truly sorry to hear about the condition of your order. We take these matters very seriously. I've initiated a refund for your order #12345 and it should reflect in your account within 3-5 business days. We appreciate your patience and understanding in this matter.\n\n[Sent at 2025-05-14T03:26:05.453003Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "002",
+    "recipient": "curious.shopper@example.com",
+    "classification": "inquiry",
+    "timestamp": "2025-05-14T03:26:09.127478Z",
+    "response": "Hello,\n\nThank you for your interest in our premium package. I'm pleased to inform you that it is indeed compatible with Mac OS. Please feel free to reach out if you have any other questions.\n\nBest regards.\n\n[Sent at 2025-05-14T03:26:09.127478Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "003",
+    "recipient": "happy.user@example.com",
+    "classification": "feedback",
+    "timestamp": "2025-05-14T03:26:14.474627Z",
+    "response": "Dear Customer,\n\nThank you for your kind words. We're thrilled to hear that Sarah was able to assist you effectively. Your feedback is greatly appreciated and will be shared with her and our team. \n\nBest Regards,\n[Your Name]\n\n[Sent at 2025-05-14T03:26:14.474627Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "004",
+    "recipient": "tech.user@example.com",
+    "classification": "support_request",
+    "timestamp": "2025-05-14T03:26:19.891240Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear you're having trouble with the installation. Error code 5123 is usually resolved by updating your system drivers. If the problem persists after updating, please let us know so we can assist you further.\n\nBest regards,\n[Your Name]\n\n[Sent at 2025-05-14T03:26:19.891240Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "005",
+    "recipient": "business.client@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-14T03:26:23.575760Z",
+    "response": "Dear Sender,\n\nThank you for considering us for a potential partnership. We are open to exploring this opportunity further. Please let us know your preferred date and time for the call next week.\n\nBest Regards.\n\n[Sent at 2025-05-14T03:26:23.575760Z]",
+    "status": "success"
+  }
+]
