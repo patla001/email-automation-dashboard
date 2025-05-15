@@ -41,11 +41,32 @@ pip install -r requirements.txt
 
 ---
 
+## ▶️ Running the main app
+
+```bash
+python main.py
+```
+
+---
+## ▶️ Running the test cases
+
+```bash
+python testcases.py
+```
+
+---
+
 ## ▶️ Running the Dashboard
 
 ```bash
 streamlit run dashboard.py
 ```
+
+---
+
+## Design Decision
+
+![Alt Text](https://github.com/patla001/email-automation-dashboard/blob/main/CadreAI-architecture-diagram.gif)
 
 ---
 
@@ -71,7 +92,7 @@ API_USER=your-zendesk-email/token
 ## 📁 Project Structure
 
 ```
-├── dashboard.py                    # Streamlit dashboard UI
+├├── dashboard.py                    # Streamlit dashboard UI
 ├── main.py                         # Main application
 ├── emailProcessor.py               # Log of sent and failed responses
 ├── processFunc.py                  # Zero-shot prompting function

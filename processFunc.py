@@ -4,7 +4,7 @@ from typing import Dict, List, Optional, Tuple
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
+# build_classification_prompt function
 def _build_classification_prompt(self, email: Dict) -> str:
             return f"""
                     You are a smart and reliable assistant tasked with classifying customer emails into one of five categories:
@@ -52,14 +52,19 @@ def _build_classification_prompt(self, email: Dict) -> str:
                     Respond only with:
                     {{ "category": "<complaint|inquiry|feedback|support_request|other>" }}
                     """
+# end of the _build_classification_prompt function
 
+# is email valid function, check if the email has a subject and body
+# and is not empty
 def _is_email_valid(self, email: Dict) -> bool:
         if not email.get("subject") or not email.get("body"):
             logger.warning(f"Email {email.get('id', '[Unknown ID]')} is missing a subject or body. Skipping classification.")
             return False
         return True
 
-
+# get_fallback_template function
+# Function to get a fallback template based on classification
+# and return a default response
 def _get_fallback_template(self, classification: str) -> str:
         templates = {
             "complaint": "We're sorry to hear about the issue. We've shared your message with our team and will follow up soon.",
@@ -69,7 +74,11 @@ def _get_fallback_template(self, classification: str) -> str:
             "other": "Thanks for your message. We'll review it and respond if needed."
         }
         return templates.get(classification, templates["other"])
+# end of the _get_fallback_template function
 
+# build_prompt function
+# Function to build the prompt for the LLM
+# based on the classification and email content
 def _build_prompt(self, email: Dict, classification: str) -> str:
         return f"""
         You are a professional customer service assistant. Based on the classification of the email, generate a short and polite response.
@@ -89,7 +98,9 @@ def _build_prompt(self, email: Dict, classification: str) -> str:
 
         Only output the message body as plain text.
         """
+# end of the _build_prompt function
 
+# call_llm function: function to call the OpenAI API and get a response using the prompt and email content
 def _call_llm(self, prompt: str, email: Dict, temperature: float = 0.0) -> Optional[str]:
     """
     Call the OpenAI API to generate a response.
@@ -121,7 +132,10 @@ def _call_llm(self, prompt: str, email: Dict, temperature: float = 0.0) -> Optio
         logger.error(f"Error in OpenAI API call: {str(e)}")
         return None
 
+# end of the _call_llm function
 
+# handle_openai_error function: Function to handle OpenAI API errors and log them
+# and provide user-friendly messages
 @staticmethod
 def handle_openai_error(e: Exception, email: Dict) -> None:
     """Handle different OpenAI errors with user-friendly messages."""
@@ -129,19 +143,21 @@ def handle_openai_error(e: Exception, email: Dict) -> None:
     
     email_id = email.get('id', '[Unknown ID]')
     subject = email.get('subject', '[No Subject]')
-
+    # Define a mapping of error types to user-friendly messages
+    # and log the error
     error_messages = {
         RateLimitError: f"Rate limit exceeded while processing email {email_id}. Consider retrying after delay.",
         APIConnectionError: f"Network error while connecting to OpenAI for email {email_id}. Check your connection.",
         AuthenticationError: f"Authentication failed while accessing OpenAI API. Check your API key.",
         APITimeoutError: f"The OpenAI request timed out for email {email_id}. Consider retrying."
     }
-
+    # Check if the error is one of the known types
     for error_type, message in error_messages.items():
         if isinstance(e, error_type):
             logger.error(message)
             return
-
+    # If the error type is not recognized, log a generic error message
+    # and provide a fallback response
     logger.error(
         f"Oops! Something unexpected happened while generating a response for email {email_id} "
         f"(Subject: '{subject}'). The error was: {e}"

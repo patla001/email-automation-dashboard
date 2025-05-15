@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 
 
 import requests
@@ -30,7 +30,7 @@ API_TOKEN = os.getenv("API_TOKEN")
 API_USER = f"{EMAIL_ZENDESK}/token"
 
 
-
+# Function to send email using SMTP
 def send_email(email_id: str, recipient: str, subject: str, body: str):
     msg = MIMEText(body)
     msg["Subject"] = subject
@@ -41,7 +41,9 @@ def send_email(email_id: str, recipient: str, subject: str, body: str):
     To:  {msg["To"]}
     From: {msg["From"]}
     {body}"""
-
+    # try and except block to catch any errors
+    # SMTP server connection
+    # and sending the email
     try:
         with smtplib.SMTP("smtp.mailtrap.io", 2525) as server:
             server.ehlo()                  #  Initialize session
@@ -54,8 +56,9 @@ def send_email(email_id: str, recipient: str, subject: str, body: str):
     except Exception as e:
         logger.error(f"Failed to send email for {email_id}: {str(e)}")
         raise RuntimeError(f"Email sending failed for {email_id}") from e
+    # end of the send_email function
 
-
+# Function to log sent email responses to a local JSON file
 def log_sent_response(entry: dict):
     """Append a sent email response to a local JSON file."""
     existing = []
@@ -67,8 +70,9 @@ def log_sent_response(entry: dict):
 
     with open(RESPONSE_LOG_PATH, "w") as f:
         json.dump(existing, f, indent=2)
+# end of the log_sent_response function
 
-
+# Function to log the response with timestamp
 def log_response(email: dict, response: str, classification: str, status: str = "success") -> str:
     """Log the sent response to a local JSON file.
     
@@ -91,7 +95,8 @@ def log_response(email: dict, response: str, classification: str, status: str = 
     recipient = email.get("from", "unknown")
     
     # Generate timestamp
-    timestamp = datetime.utcnow().isoformat() + "Z"
+    timestamp = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
     full_response = f"{response}\n\n[Sent at {timestamp}]"
 
     # Log the response locally
@@ -107,16 +112,13 @@ def log_response(email: dict, response: str, classification: str, status: str = 
     # Log the send action with timestamp
     logger.info(f"{'Sending' if status == 'success' else 'Failed to send'} {classification} response for email {email_id} at {timestamp}")
     return full_response
+    # end of the log_response function
 
-
-
+# create_ticket function
+# Function to create a support ticket in Zendesk using the REST API
 def create_ticket(email_id: str, context: str, type: str, recipient: str):
     """Create a support ticket in Zendesk using the REST API"""
-    # zendesk_domain = "sandiegostateuniversity-90923.zendesk.com"
-    # email = "epatlan1742@sdsu.edu" 
-    
-    # api_token = "aEhBhjQaDOUJO3Pj1qeWHiZ3B2zXb73wu4MQMHTp"
-    # api_user = f"{email}/token"
+   
 
     url = f"https://{ZENDESK_DOMAIN}/api/v2/tickets.json"
     headers = {"Content-Type": "application/json"}
@@ -128,14 +130,16 @@ def create_ticket(email_id: str, context: str, type: str, recipient: str):
             "priority": "normal",
             "status": "open",
             "requester": {
-                "name": "Customer from Email",
-                "email": f"{recipient}"  # Replace with real email if available
+                "name": f"Customer from Email",
+                "email": f"{recipient}"  
             },
             
             "tags": ["email_automation", type]
         }
     }
-
+    # try and except block to catch any errors
+    # while creating the ticket
+    # and sending the email
     try:
         response = requests.post(
             url,
@@ -143,12 +147,15 @@ def create_ticket(email_id: str, context: str, type: str, recipient: str):
             headers=headers,
             auth=HTTPBasicAuth(API_USER, API_TOKEN)
         )
-       
+        # check if the response is successful
+        # and the ticket is created
         if response.status_code == 201:
             ticket_id = response.json()["ticket"]["id"]
             logger.info(f"Successfully created Zendesk ticket ID {ticket_id} for email {email_id}")
         else:
             logger.error(f"Failed to create Zendesk ticket for email {email_id}: {response.status_code} - {response.text}")
+    # exception block to catch any errors
     except Exception as e:
         logger.error(f"Exception while creating support ticket for email {email_id}: {str(e)}")
 
+# end of the create_ticket function

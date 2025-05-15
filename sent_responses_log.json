@@ -118,5 +118,373 @@
     "timestamp": "2025-05-14T03:26:23.575760Z",
     "response": "Dear Sender,\n\nThank you for considering us for a potential partnership. We are open to exploring this opportunity further. Please let us know your preferred date and time for the call next week.\n\nBest Regards.\n\n[Sent at 2025-05-14T03:26:23.575760Z]",
     "status": "success"
+  },
+  {
+    "email_id": "281018",
+    "recipient": "angry.customer@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-14T16:11:02.817437Z",
+    "response": "Dear Customer,\n\nI'm truly sorry to hear about the condition of your order. We take these matters very seriously. I've initiated a refund for your order #12345 and it should reflect in your account within 3-5 business days. We appreciate your patience and understanding in this matter.\n\n[Sent at 2025-05-14T16:11:02.817437Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T06:46:11.546030Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to assist you better and process your refund request as quickly as possible. \n\nBest Regards.\n\n[Sent at 2025-05-15T06:46:11.546030Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T06:46:12.661875Z",
+    "response": "Email sending failed due to an error: Email sending failed for test001\n\n[Sent at 2025-05-15T06:46:12.661875Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T06:46:13.275802Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T06:46:13.275802Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "393782",
+    "recipient": "angry.customer@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T06:50:59.727687Z",
+    "response": "Thank you for your message. We've received your email and will review it promptly.\n\n[Sent at 2025-05-15T06:50:59.727687Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T07:13:56.795690Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently. Thank you for your patience.\n\nBest Regards.\n\n[Sent at 2025-05-15T07:13:56.795690Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:13:57.808574Z",
+    "response": "Email sending failed due to an error: Email sending failed for test001\n\n[Sent at 2025-05-15T07:13:57.808574Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:13:58.706889Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T07:13:58.706889Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T07:14:51.269678Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently. \n\nBest regards,\n[Your Name]\n\n[Sent at 2025-05-15T07:14:51.269678Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:14:52.241842Z",
+    "response": "Email sending failed due to an error: Email sending failed for test001\n\n[Sent at 2025-05-15T07:14:52.241842Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:14:53.124660Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T07:14:53.124660Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T07:18:36.180896Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently. \n\nBest regards,\n[Your Name]\n\n[Sent at 2025-05-15T07:18:36.180896Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:18:36.710798Z",
+    "response": "Email sending failed due to an error: Email sending failed for test001\n\n[Sent at 2025-05-15T07:18:36.710798Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:18:37.771578Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T07:18:37.771578Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "751397",
+    "recipient": "angry.customer@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:20:26.214572Z",
+    "response": "Dear Customer,\n\nI'm truly sorry to hear about the condition of your order. We take these matters very seriously. I've initiated a refund for your order #12345, and you should see it reflected in your account within 3-5 business days. We appreciate your patience and understanding.\n\n[Sent at 2025-05-15T07:20:26.214572Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T07:24:20.329377Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently. \n\nBest regards,\n[Your Name]\n\n[Sent at 2025-05-15T07:24:20.329377Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:24:20.371474Z",
+    "response": "Error processing complaint: 'str' object has no attribute 'id'\n\n[Sent at 2025-05-15T07:24:20.371474Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:24:20.389365Z",
+    "response": "Error processing complaint: 'str' object has no attribute 'id'\n\n[Sent at 2025-05-15T07:24:20.389365Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "31402",
+    "recipient": "angry.customer@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:29:58.367236Z",
+    "response": "Error processing complaint: 'str' object has no attribute 'id'\n\n[Sent at 2025-05-15T07:29:58.367236Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "907048",
+    "recipient": "angry.customer@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:37:55.168305Z",
+    "response": "Dear Customer,\n\nI'm truly sorry to hear about the condition of your order. We take these matters very seriously. I have initiated a refund process for your order #12345 and you should see it reflected in your account within 3-5 business days. We appreciate your patience and understanding in this matter.\n\n[Sent at 2025-05-15T07:37:55.168305Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T07:38:10.254320Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently. \n\nBest regards.\n\n[Sent at 2025-05-15T07:38:10.254320Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:38:11.216483Z",
+    "response": "Email sending failed due to an error: Email sending failed for test001\n\n[Sent at 2025-05-15T07:38:11.216483Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:38:12.089862Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T07:38:12.089862Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T07:42:20.435420Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently. \n\nBest regards.\n\n[Sent at 2025-05-15T07:42:20.435420Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:42:21.104463Z",
+    "response": "Email sending failed due to an error: Email sending failed for test001\n\n[Sent at 2025-05-15T07:42:21.104463Z]",
+    "status": "error"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:42:21.618034Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T07:42:21.618034Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T07:50:06.960771Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently. \n\nBest regards,\n[Your Name]\n\n[Sent at 2025-05-15T07:50:06.960771Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:50:07.965108Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T07:50:07.965108Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T07:57:33.831921Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently.\n\nBest regards,\nCustomer Service Team\n\n[Sent at 2025-05-15T07:57:33.831921Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T07:57:34.870840Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T07:57:34.870840Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T08:06:10.034030Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to assist you better and process your refund request as quickly as possible.\n\nBest regards.\n\n[Sent at 2025-05-15T08:06:10.034030Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:06:11.063633Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:06:11.063633Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T08:11:23.098798Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently. \n\nBest regards,\n[Your Name]\n\n[Sent at 2025-05-15T08:11:23.098798Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:11:24.109608Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:11:24.109608Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T08:11:45.635138Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently. \n\nBest regards,\n[Your Name]\n\n[Sent at 2025-05-15T08:11:45.635138Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:11:46.623639Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:11:46.623639Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "other",
+    "timestamp": "2025-05-15T08:14:18.259809Z",
+    "response": "Dear Customer,\n\nI'm sorry to hear about your dissatisfaction. Could you please provide more details about the issue you're facing? This will help us to process your refund request more efficiently. \n\nBest regards.\n\n[Sent at 2025-05-15T08:14:18.259809Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:14:19.297414Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:14:19.297414Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:21:14.851445Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:21:14.851445Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:24:27.733924Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:24:27.733924Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:26:14.969194Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:26:14.969194Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:29:08.115784Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:29:08.115784Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:31:50.339786Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:31:50.339786Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:32:28.360142Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:32:28.360142Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:33:52.911378Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:33:52.911378Z]",
+    "status": "success"
+  },
+  {
+    "email_id": "test001",
+    "recipient": "test@example.com",
+    "classification": "complaint",
+    "timestamp": "2025-05-15T08:40:30.851520Z",
+    "response": "We apologize for the inconvenience...\n\n[Sent at 2025-05-15T08:40:30.851520Z]",
+    "status": "success"
   }
 ]
