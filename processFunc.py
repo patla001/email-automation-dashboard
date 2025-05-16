@@ -95,7 +95,9 @@ def _build_prompt(self, email: Dict, classification: str) -> str:
         - Reply directly to the customer (no AI disclaimers)
         - Keep it under 4 sentences
         - Do not repeat the original message
-
+        - end polite closing with name of title services such as "Customer Service Team"
+        - Use proper grammar, spelling, and punctuation
+        
         Only output the message body as plain text.
         """
 # end of the _build_prompt function
