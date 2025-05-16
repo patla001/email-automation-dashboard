@@ -92,12 +92,13 @@ API_USER=your-zendesk-email/token
 ## 📁 Project Structure
 
 ```
-├├── dashboard.py                    # Streamlit dashboard UI
+├── dashboard.py                    # Streamlit dashboard UI
 ├── main.py                         # Main application
+├── testcases.py                    # Test Cases or Edge Cases
 ├── emailProcessor.py               # Log of sent and failed responses
 ├── processFunc.py                  # Zero-shot prompting function
 ├── emailAutomationSystem.py        # Email Automation Class
-└── email_automation_service.py     # Mailtrap and Zendesk API Services
+├── email_automation_service.py     # Mailtrap and Zendesk API Services
 ├── sent_responses_log.json         # Log of sent and failed responses
 ├── requirements.txt                # Python Libraries Requirements
 ├── .env.example                    # Sample env file
