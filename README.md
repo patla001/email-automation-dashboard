@@ -1,6 +1,6 @@
 # 📬 Email Automation System + Monitoring Dashboard
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![License](https://img.shields.io/github/license/patla001/email-automation-dashboard)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Last Commit](https://img.shields.io/github/last-commit/patla001/email-automation-dashboard)
 
 This project is a fully functional, AI-powered email classification and response automation system with a real-time **Streamlit dashboard** for monitoring metrics and delivery performance.

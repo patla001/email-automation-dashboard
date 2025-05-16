@@ -1,5 +1,5 @@
 import unittest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 from emailProcessor import EmailProcessor
 from emailAutomationSystem import EmailAutomationSystem
 
@@ -33,7 +33,8 @@ class TestEmailAutomationSystem(unittest.TestCase):
     # end of the test_process_email_success function
 
     # Mocking the send_email method
-
+    # Replaces the classify_email method of the EmailProcessor class with a mock that always returns 'complaint'.
+    # To control the classification result and ensure the test behavior is consistent, regardless of the actual implementation or input.
     @patch.object(EmailProcessor, 'classify_email', return_value='complaint')
     @patch.object(EmailProcessor, 'generate_response', return_value='We apologize for the inconvenience...')
     @patch('emailAutomationSystem.send_email')
